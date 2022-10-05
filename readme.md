@@ -1,35 +1,34 @@
 # simple-spring-application
 
-spring boot application with basic rest controller.
+Spring boot application with basic rest controller.
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+Dockerized RestFul spring boot application.
 
 ## Getting Started
 
 ### Dependencies
 
 * maven
-* docker (if you want to run it dockerized)
+* docker (for dockerized app)
 
-### Installing
+### Installing and Run
 
+Maven: 
 ```
 $ mvn install
-```
-
-### Executing program
-
-```
 $ mvn spring-boot:run
 ```
 
-## Help
-
-Any advise for common problems or issues.
+Dockerized: 
 ```
-command to run if program contains helper info
+$ docker build -t my-app .
+$ docker run -dp 8080:8080 --rm -it my-app:latest
+```
+Live docker trace:
+```
+$ docker logs --follow <DOCKER-ID>
 ```
 
 ## Authors
@@ -40,7 +39,7 @@ ex. Idan Yehuda
 
 ## Version History
 
-* 0.1
+* 0.0.1
     * Initial Release
 
 ## License
