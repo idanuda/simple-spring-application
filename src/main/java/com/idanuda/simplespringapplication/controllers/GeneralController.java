@@ -14,14 +14,8 @@ public class GeneralController {
         this.generalService = generalService;
     }
 
-
     @GetMapping("/fibonachi/{number}")
     public String fibonachi(@PathVariable Integer number) {
         return "fibu number: " +  generalService.getFibunachi (number, 0, 0, 1) ;
     }
-
-
-
-
-
 }
