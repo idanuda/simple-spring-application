@@ -1,0 +1,29 @@
+spring:
+  config:
+    activate:
+      on-profile: dev
+name: dev-YAML
+environment: testing
+enabled: false
+swapi-url: https://swapi.dev/
+
+---
+spring:
+  config:
+    activate:
+      on-profile: qa
+
+name: qa-YAML
+environment: qa
+enabled: true
+swapi-url: https://swapi.dev/api/people/
+
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+name: prod-YAML
+environment: production
+enabled: true
+swapi-url: https://swapi.dev/api/people/
