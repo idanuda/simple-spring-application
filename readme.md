@@ -1,6 +1,6 @@
-# Chegg Task - SWAPI Proxy
+# Simple Spring Boot Application
 
-Spring boot application that implements proxy server for swapi.
+Spring boot application that implements proxy server for external api (swapi).
 
 ## Description
 
