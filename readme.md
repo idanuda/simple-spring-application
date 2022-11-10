@@ -24,7 +24,7 @@ $ mvn spring-boot:run
 Dockerized: 
 ```
 $ docker build -t my-app .
-$ docker run -dp 8080:8080 --rm -it my-app:latest
+$ docker run -dp 8080:8080 --rm -it my-app:latest spring.profiles.active=dev
 ```
 Live docker trace:
 ```
